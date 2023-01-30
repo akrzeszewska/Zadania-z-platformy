@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator w html</title>
+    <link rel="stylesheet" href="prostykalkulator.css">
+    <!--<script>
+      
+      const form = document.getElementById("dzialanie");
+  dzialanie.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let result = 0;
+  const screen = document.getElementById("wynik");
+  const n1 = +e.target[0].value;
+  const n2 = +e.target[1].value;
+  const operation = e.target[2].value;
+
+  switch (operation) {
+    case "+":
+      result = n1 + n2;
+      break;
+    case "-":
+      result = n1 - n2;
+      break;
+    case "*":
+      result = n1 * n2;
+      break;
+    case "/":
+      if (n2 == 0) {
+        result = "ERROR!";
+      } else {
+        result = n1 / n2;
+      }
+      break;
+  }
+
+  screen.innerText = result;
+});
+
+
+    </script> -->
+
+    <script>
+      var x = document.getElementById("first");
+      var y = document.getElementById("second");
+      var z = document.getElementsByClassName("operation");
+
+      function dodaj(x, y){
+
+      var wynik = x + y;
+
+      return wynik;
+
+      }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div id="kontener">
+     <div id="wynik">
+          <span class="wynik_1"><b>60</b></span>
+    </div>
+     <form>
+         <div id="dzialanie">
+            <div class="licz licz_1">
+            <span>Input 1st number</span><br>
+            <input type="number" id="first">
+            </div>
+            <div class="licz licz_2">
+              <span>Input 2st number</span><br>
+              <input type="number" id="second">
+              </div>
+        <div class="licz">
+            <span>Operation</span><br>
+            <select class="operation">
+            <option value="+"></option>
+            <option value="-"></option>
+            <option value="*"></option>
+            <option value="/"></option>
+          </select>
+        </div>
+          <input class="go" type="submit" value="GO">
+      
+    
+    </form>
+    </div>
+    </div> 
+
+  
+</body>
+</html>
