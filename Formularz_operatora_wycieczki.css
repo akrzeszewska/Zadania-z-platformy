@@ -1,0 +1,105 @@
+#podstawa {
+    text-align: center;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 3;
+    box-sizing: border-box;
+}
+
+.start {
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    width: 50px;
+    height: 5px;
+    /*border: black solid 1px;
+    border-radius: 10%;*/
+
+}
+
+.icon {
+    display: block;
+}
+
+.span {
+    text-align: left;
+}
+
+.wypelnij {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    top: 116px;
+}
+
+.row_1 {
+    background-image: url(hawaje1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tytul {
+        font-size: 22px;
+    }
+
+    .pole {
+        font-size: 15px;
+    }
+
+    .menu_1 {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+    top: 20px;
+    right: 3px;
+    }
+    .row_1{
+        background-position-y: -20px;
+        height: 400px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    .row_1 {
+        height: 281px;
+        background-position-y: -214px;
+    }
+
+    .tytul {
+        font-size: 33px;
+    }
+
+    .pole {
+        font-size: 21px;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    .info {
+        height: 62px;
+    }
+}
